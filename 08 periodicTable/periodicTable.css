@@ -1,0 +1,399 @@
+::selection {
+    /* background-color: darkblue; */
+    background-color: transparent;
+    /* color: #333; */
+    /* color: orange; */
+    /* color: transparent; */
+    color: #eee;
+}
+
+:root {
+    font-family: Georgia;
+    font-size: 11px;
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    background-color: #bbb;
+}
+
+div  * > div {
+    opacity: .53;
+}
+div  * > div:hover {
+    opacity: 1;
+}
+
+.wrapper {
+    padding: .2rem .2rem 0rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 4rem;
+    margin:.5rem 0  0;
+    color: #fff;
+}
+
+.periodic-table, .lan, .act {
+    text-align: center;
+    margin-bottom: 2rem;
+    /* zoom: .7; */
+    color: #333c;
+}
+
+.periodic-table,.lan ,.act {
+    display: grid;
+    gap: 2px;
+}
+
+.periodic-table {
+    grid-template-columns: repeat(18,1fr);
+    /* grid-template-rows: 1fr  5rem 100%; */
+}
+
+.act, .lan {
+    width: 77.8%;
+    margin: 2rem auto 0;
+}
+
+.lan {
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.act {
+    /* margin-bottom: 6rem; */
+}
+
+div.wrapper > div > div {
+    padding: .25rem .5rem;
+    /* background-color: #fff; */
+    transition: .75s all cubic-bezier(0,-0.88, 0.98, 2.09);
+    transition: .75s all cubic-bezier(0,-1.39,1,2.12);
+    transition: .125s all ease-in-out;
+    /* filter: invert(1); */
+}
+
+.leyend div:active{
+    transform: scale(2);
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0 0 0 .35rem #eee, 0 0  .5rem .35rem #333;
+}
+
+.leyend {
+    transform: scale(.9);
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem;
+    /* grid-template-rows: repeat(3,4rem); */
+    font-size: 1.5rem;
+    gap: 2px;
+    width: max-content;
+    margin: auto;
+    position: absolute;
+    /* text-align: center; */
+    font-family: Arial, Helvetica, sans-serif;
+    left: 40.5rem;
+    top: -2rem;
+    opacity: .25;
+    transition: .25s all ease;
+}
+
+.leyend:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+div.wrapper > div.act > div:hover ,
+div.wrapper > div.lan > div:hover ,
+div.wrapper > div.periodic-table > div:hover {
+    z-index: 99;
+    /* transform-origin: 50% 50%; */
+}
+
+div.wrapper > div.lan > div:active,
+div.wrapper > div.act > div:active,
+div.wrapper > div.periodic-table > div:active {
+    border-radius: .35rem;
+    filter: invert(1);
+    transform: scale(1.2) rotate(360deg);
+    transform: scale(1.2) rotate3d(1, 0, 0, 360deg);
+    transform: scale(2);
+    box-shadow: 0 0 3px 4px #fff,0 0 4px 8px #333;
+    box-shadow: 0 0 0px .5px #fff,0 0 8px 7px #333;
+    /* border: 2px solid #eee; */
+    /* position: relative; */
+}
+
+div.wrapper > div > div:active .atomic-number{
+    transform: scale(1.2);
+    font-weight: 900;
+}
+
+.act {
+    grid-template-columns: repeat(14, 1fr);
+}
+
+.periodic-table > div, 
+.lan > div, 
+.act > div {
+    border: 1px solid #3333;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.periodic-table > div:nth-of-type(2) {grid-column: 18/19;}
+.periodic-table > div:nth-of-type(5) {grid-column: 13/14;}
+.periodic-table > div:nth-of-type(13) {grid-column: 13/14;}
+
+.oxidation-numbers {
+    grid-column: 1/3;
+    text-align: right;
+    /* color: #3339; */
+}
+
+.symbol {
+    grid-column: 1/3;
+    font-size: 2rem;
+    transform: scale(1.24);
+    font-weight: 900;
+    font-family: Helvetica, sans-serif;
+    /* color: #333; */
+}
+
+.atomic-mass {
+    grid-column: 1/3;
+
+}
+.atomic-number {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 900; */
+    
+}
+.electronegativity {
+
+}
+.element-name {
+    grid-column: 1/3;
+    font-weight: 900;
+    /* color: #333; */
+}
+
+.periodic-table > div:nth-of-type(1) {
+    background-color: hsl(217, 41%, 28%); 
+    color: #eee !important;
+}
+
+.periodic-table > div:nth-of-type(73),
+.periodic-table > div:nth-of-type(55),
+.periodic-table > div:nth-of-type(37),
+.periodic-table > div:nth-of-type(19),
+.periodic-table > div:nth-of-type(11),
+.periodic-table > div:nth-of-type(3) {
+    background-color: hsl(192, 42%, 24%); 
+    color: #eee !important;
+    transform-origin: 0% 50% !important;
+}
+
+.periodic-table > div:nth-of-type(74),
+.periodic-table > div:nth-of-type(56),
+.periodic-table > div:nth-of-type(38),
+.periodic-table > div:nth-of-type(20),
+.periodic-table > div:nth-of-type(12),
+.periodic-table > div:nth-of-type(4) {
+    background-color: hsl(347, 36%, 28%); 
+    color: #eee !important;
+}
+
+.periodic-table > div:nth-of-type(79),
+.periodic-table > div:nth-of-type(78),
+.periodic-table > div:nth-of-type(77),
+.periodic-table > div:nth-of-type(76),
+.periodic-table > div:nth-of-type(75),
+.periodic-table > div:nth-of-type(66),
+.periodic-table > div:nth-of-type(65),
+.periodic-table > div:nth-of-type(64),
+.periodic-table > div:nth-of-type(63),
+.periodic-table > div:nth-of-type(62),
+.periodic-table > div:nth-of-type(61),
+.periodic-table > div:nth-of-type(60),
+.periodic-table > div:nth-of-type(59),
+.periodic-table > div:nth-of-type(58),
+.periodic-table > div:nth-of-type(57),
+.periodic-table > div:nth-of-type(48),
+.periodic-table > div:nth-of-type(47),
+.periodic-table > div:nth-of-type(46),
+.periodic-table > div:nth-of-type(45),
+.periodic-table > div:nth-of-type(44),
+.periodic-table > div:nth-of-type(43),
+.periodic-table > div:nth-of-type(42),
+.periodic-table > div:nth-of-type(41),
+.periodic-table > div:nth-of-type(40),
+.periodic-table > div:nth-of-type(39),
+.periodic-table > div:nth-of-type(30),
+.periodic-table > div:nth-of-type(29),
+.periodic-table > div:nth-of-type(28),
+.periodic-table > div:nth-of-type(27),
+.periodic-table > div:nth-of-type(26),
+.periodic-table > div:nth-of-type(25),
+.periodic-table > div:nth-of-type(24),
+.periodic-table > div:nth-of-type(23),
+.periodic-table > div:nth-of-type(22),
+.periodic-table > div:nth-of-type(21) {
+    background-color: hsl(250, 25%, 32%); 
+    color: #eee !important;
+}
+
+.periodic-table > div:nth-of-type(90),
+.periodic-table > div:nth-of-type(89),
+.periodic-table > div:nth-of-type(88),
+.periodic-table > div:nth-of-type(87),
+.periodic-table > div:nth-of-type(86),
+.periodic-table > div:nth-of-type(85),
+.periodic-table > div:nth-of-type(84),
+.periodic-table > div:nth-of-type(83),
+.periodic-table > div:nth-of-type(82),
+.periodic-table > div:nth-of-type(81),
+.periodic-table > div:nth-of-type(80) {
+    background-color: hsl(231, 5%, 29%); 
+    color: #eee !important;
+}
+
+.periodic-table > div:nth-of-type(13), 
+.periodic-table > div:nth-of-type(31), 
+.periodic-table > div:nth-of-type(49), 
+.periodic-table > div:nth-of-type(50), 
+.periodic-table > div:nth-of-type(71),
+.periodic-table > div:nth-of-type(70),
+.periodic-table > div:nth-of-type(69),
+.periodic-table > div:nth-of-type(68),
+.periodic-table > div:nth-of-type(67) {
+    background-color: hsl(168, 24%, 24%); 
+    color: #eee !important;
+}
+
+.periodic-table > div:nth-of-type(72),
+.periodic-table > div:nth-of-type(54),
+.periodic-table > div:nth-of-type(36),
+.periodic-table > div:nth-of-type(18),
+.periodic-table > div:nth-of-type(10),
+.periodic-table > div:nth-of-type(2) {
+    background-color: hsl(346, 27%, 30%); 
+    color: #eee !important;
+    transform-origin: 100% 50% !important;
+
+}
+
+.periodic-table > div:nth-of-type(53),
+.periodic-table > div:nth-of-type(35),
+.periodic-table > div:nth-of-type(34),
+.periodic-table > div:nth-of-type(17),
+.periodic-table > div:nth-of-type(16),
+.periodic-table > div:nth-of-type(15),
+.periodic-table > div:nth-of-type(6),
+.periodic-table > div:nth-of-type(7),
+.periodic-table > div:nth-of-type(8),
+.periodic-table > div:nth-of-type(9) {
+    background-color: hsl(217, 41%, 28%); 
+    color: #eee !important;
+}
+
+.act > div {
+    transform-origin: 50% 100% !important;
+}
+
+.periodic-table > div:nth-of-type(52),
+.periodic-table > div:nth-of-type(51),
+.periodic-table > div:nth-of-type(33),
+.periodic-table > div:nth-of-type(32),
+.periodic-table > div:nth-of-type(14),
+.periodic-table > div:nth-of-type(5) {
+    background-color: hsl(38, 51%, 22%); 
+    color: #eee !important;
+}
+
+.lan div {background-color: hsl(208, 69%, 28%) !important; color: #eee;}
+.act div {background-color: hsl(21, 43%, 27%) !important; color: #eee;}
+
+.alkali-metals, .alkali-metals span {background-color: hsl(192, 42%, 24%);}
+.alkaline-earth-metals, .alkaline-earth-metals span {background-color: hsl(347, 36%, 28%) ;}
+.transition-metals, .transition-metals span {background-color: hsl(250, 25%, 32%) ;}
+.post-transition-metals, .post-transition-metals span {background-color: hsl(168, 24%, 24%) ;}
+.metalloids, .metalloids span {background-color: hsl(38, 51%, 22%) ;}
+.reactive-nonmetals, .reactive-nonmetals span {background-color: hsl(217, 41%, 28%) ;}
+.noble-gases, .noble-gases span {background-color: hsl(346, 27%, 30%) ;}
+.lanthanides, .lanthanides span {background-color: hsl(208, 69%, 28%) ;}
+.actinides, .actinides span {background-color: hsl(21, 43%, 27%) ;}
+.unknown-properties, .unknown-properties span {background-color: hsl(231, 5%, 29%) ;}
+
+.leyend > div {
+    position: relative;
+    padding: 1rem 0 !important;
+    text-align: center;
+    color: #eee;
+    font-size: .98rem;
+}
+
+.leyend {
+    margin-top: 15rem;
+}
+
+.leyend > div > span {
+    position: absolute;
+}
+
+/* 
+.alkali-metals span,
+.alkaline-earth-metals span,
+.transition-metals span,
+.post-transition-metals span,
+.metalloids span,
+.reactive-nonmetals span,
+.noble-gases span,
+.lanthanides span,
+.actinides span,
+.unknown-properties span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 1rem;
+    left: -3rem;
+    top: -.15rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+*/
+
+.unknown-properties {grid-column: 2/3;}
+
+
+.periodic-table > div:nth-of-type(90),
+.periodic-table > div:nth-of-type(71),
+.periodic-table > div:nth-of-type(52),
+.periodic-table > div:nth-of-type(33),
+.periodic-table > div:nth-of-type(14),
+.periodic-table > div:nth-of-type(5) {
+    box-shadow: 
+    -2px 0px 0px 0px black,
+    -2px 2px 0px 0px black,
+     0px 2px 0px 0px black;
+}
+
+.periodic-table > div:nth-of-type(90){
+    box-shadow: 
+    -2px 0px 0px 0px black    
+}
+
+.highlight {
+    transform: scale(1.9745);
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0 0 0 5px #eee, 0 0 5px 5px #333 !important;
+    border-radius: 5px;
+}
+:hover {
+    z-index: 9999 !important;
+}
