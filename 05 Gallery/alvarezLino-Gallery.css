@@ -1,0 +1,124 @@
+:root {
+    font-size: 18px;
+    font-family: georgia;
+    background-color: #aaa;
+}
+
+img {
+    width: 100%;
+}
+
+.photo-gallery {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: darkred;
+}
+
+h2 {
+    color: darkred;
+}
+
+figure {
+    border: .25rem solid darkred;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 2rem;
+    opacity: .75;
+    transition: all .1s ease-in-out
+}
+
+figure h2 {
+    font-size: 1.2rem;
+}
+
+figure img {
+    border: .125rem solid darkred;
+    transition: .2s all ease;
+
+}
+
+figure figcaption p {
+    font-size: .8rem;
+    font-family: Verdana;
+}
+
+figure:hover {
+    opacity: 1;
+    box-shadow: 0 0 11px 0px black;
+}
+
+figure:active {
+    opacity: 1;
+    box-shadow: 0 0 11px 0px #00000000;
+}
+
+figure:hover figcaption {
+    /* text-align: right; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .photo-gallery {
+      grid-template-columns:  1fr 1fr; /* Switch to 2 columns */
+    }
+  }
+
+  @media (max-width: 500px) {
+    .photo-gallery {
+      grid-template-columns: 1fr; /* Switch to 2 columns */
+    }
+  }
+
+

@@ -1,0 +1,46 @@
+:root {
+    font-size: 18px;
+    font-family: georgia;
+    background-color: #aaa;
+}
+
+img {
+    width: 100%;
+    border: 2px solid darkred;
+    /* padding: 2rem; */
+    margin-bottom: 2rem;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 55rem; /* fluid with a max value*/
+}
+
+.link2home {
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    color: darkred;
+}
+
+figcaption {
+    font-size: .85rem;
+    text-align: center;
+}
+
+figure {
+    margin-bottom: 4rem;
+    background-color: white;
+    padding: 2rem;
+    border: 3px solid darkred;
+    border-radius: 5px;
+}
+
+a {
+    color: darkred;
+}
