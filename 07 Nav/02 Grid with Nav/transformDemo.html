@@ -1,0 +1,48 @@
+<style>
+#wrapper {
+    font-size: 3rem;
+    padding: 5rem;
+}
+
+div div {
+    margin-bottom: 2rem;
+}
+
+#one, #two, #three {
+    transition: all 1s ease-in-out;
+}
+
+#one {background-color: red}
+#two {background-color: green}
+#three {background-color: blue}
+
+#one {transform-origin: 100% 100%;}
+/* #two {transform-origin: 0% 0%;} */
+#three {transform-origin: 0% 0%;}
+
+#one:hover {
+    transform: rotate(360deg);
+}
+#two:hover {
+    transform: translate(1rem, 1rem)
+}
+#three {
+    transform: scaleY(0);
+    /* display: none; */
+}
+
+div:hover #three {
+    transform: scaleY(1);
+    /* display: block; */
+
+}
+
+
+</style>
+
+
+<div id="wrapper">
+    <div id="one">one</div>
+    <div id="two">two</div>
+    <div id="three">three</div>
+</div>
