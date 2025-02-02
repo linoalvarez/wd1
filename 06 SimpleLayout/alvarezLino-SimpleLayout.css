@@ -1,0 +1,152 @@
+:root {
+    background-color: lightblue;
+    color: darkblue;
+    font-family: georgia;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+::selection {
+    background-color: darkblue;
+    color: lightblue;
+}
+
+#wrapper {
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrapper {
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrapperTwo {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 1rem;
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1,
+h2,
+a {
+    color: darkblue;
+}
+
+li,
+a {
+    transition: .2s all ease-in-out;
+}
+
+li:hover,
+a:hover {
+    background-color: darkblue;
+    color: lightblue;
+
+}
+
+#wrapper > * {
+    border: 1px solid darkblue;
+    padding: 0 1rem;
+}
+
+#wrapperTwo > * {
+    border: 1px solid darkblue;
+    padding: 0 1rem;
+}
+
+header,
+nav,
+footer {
+    grid-column: 1/-1;
+}
+
+header {}
+
+nav {}
+
+nav a {
+    padding: 0 1rem;
+}
+
+aside {}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+main {}
+
+footer {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+figure {
+    width: 35%;
+    float: left;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+figcaption {
+    font-size: .7rem;
+    font-family: verdana;
+}
+
+img {
+    width: 100%;
+}
