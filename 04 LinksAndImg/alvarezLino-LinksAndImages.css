@@ -1,0 +1,123 @@
+:root {
+    font-family: Georgia;
+    color: cornsilk;
+    color: #000723;
+    font-size: 20px;
+    line-height: 1.7;
+    /* 1rem=20px */
+    background-color: cornsilk;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* margin: 0; */
+}
+
+#wrapper {
+    background-color: cornflowerblue;
+    padding: 2rem;
+    max-width: 60rem;
+    margin: auto;
+    border: 5px solid cornsilk;
+    border: 5px solid #000723;
+    /* border: 5px solid #7F8391; */
+}
+
+h1 {
+    text-align: right;
+    color: cornsilk;
+    border-bottom: 5px solid #000723;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 1px #000723;
+}
+
+h1, h2 {
+    font-family: Verdana;
+
+}
+
+a {
+    /* display: inline-block; */
+    color: #000723;
+    text-decoration-color: #000723;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration-color: cornsilk;
+    color: cornsilk;
+    /* text-transform: uppercase; */
+}
+
+section div {
+    padding: 1rem;
+}
+
+img {
+    border: 2px solid cornsilk;
+}
+
+a img:hover {
+    border: 2px solid #000723;
+}
+
+
+.text  {
+    text-align: center; 
+}
+
+
+.text a { 
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    transition: all .12s ease-in-out;
+    border-left: 1px solid #00072333;
+    border-right: 1px solid #00072333;
+}
+
+.text a:hover {
+    background-color: cornsilk;
+    color: #000723;
+}
+
+.images {
+    text-align: center;
+}
+
+.images img {
+    height: 5.5rem;
+}
+
+figcaption {
+    font-size: .7rem;
+    font-family: verdana;
+    color: #000723;
+    text-align: right;
+}
+
+figure {
+    width: 13rem;
+    background-color: cornsilk;
+    padding: 1rem;
+    border: 5px solid #000723
+}
+figure.left {
+    float: left;
+    margin-left: 0;
+}
+figure.right {
+    float: right;
+    margin-right: 0;
+}
+
+figure img {width: calc(100% - 10px);}
+
+.big-photos img {width: 100%;}
+
+.big-photos a {
+    display: block;
+    text-align: right;
+}
