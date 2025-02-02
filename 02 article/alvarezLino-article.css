@@ -1,0 +1,21 @@
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+
+div.heading-level1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+div.heading-level2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+div.first-paragraph {
+    margin-bottom: 16px;
+}
+
+div.second-paragraph {
+    margin-bottom: 16px;
+}
