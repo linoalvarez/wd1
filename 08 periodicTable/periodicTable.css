@@ -103,7 +103,7 @@ div.wrapper > div > div {
 
 .leyend:hover {
     opacity: 1;
-    transform: scale(1);
+    /* transform: scale(1); */
 }
 
 div.wrapper > div.act > div:hover ,
