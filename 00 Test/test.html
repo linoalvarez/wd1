@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>123 test 123</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Student Sign Out/In</h1>
+        <form id="sign-out-in-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text"
+                id="student-name"
+                name="student-name"
+                required>
+            <button type="button"
+                onclick="signOut()">Sign Out</button>
+            <button type="button"
+                onclick="signIn()">Sign In</button>
+        </form>
+        <div id="log"></div>
+    </div>
+    <script>
+        function signOut() {
+            const name = document.getElementById('student-name').value;
+            const log = document.getElementById('log');
+            const time = new Date().toLocaleTimeString();
+            log.innerHTML += `<p>${name} signed out at ${time}</p>`;
+        }
+
+        function signIn() {
+            const name = document.getElementById('student-name').value;
+            const log = document.getElementById('log');
+            const time = new Date().toLocaleTimeString();
+            log.innerHTML += `<p>${name} signed in at ${time}</p>`;
+        }
+    </script>
+</body>
+
+</html>
